@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Visita</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tab {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .tab a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #555;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        .add-contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-contact-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="image/perfil.jpg" alt="Foto de perfil" class="profile-img">
+        <div class="company-name">Nombre de la Empresa</div>
+        
+        <!-- Botón para descargar la tarjeta de contacto -->
+        <a href="contacto.vcf" download class="add-contact-btn">+ Add to Contacts</a>
+        
+        <!-- Pestañas de contacto e información de la empresa -->
+        <div class="tab">
+            <a href="tel:+1234567890">Contact</a>
+            <a href="#">Company</a>
+        </div>
+        
+        <!-- Iconos de redes sociales -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                <img src="image/linkedin.png" alt="LinkedIn" style="width: 24px;">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                <img src="image/twitter.png" alt="Twitter" style="width: 24px;">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <img src="image/instagram.png" alt="Instagram" style="width: 24px;">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
