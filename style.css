@@ -51,18 +51,20 @@ body {
 
 .contacts {
     display: flex;
-    flex-direction: column; /* Alinea cada div en columnas */
-    gap: 15px; /* Espacio entre filas */
+    flex-direction: column;
 }
 
 .contact-item {
-    display: flex;
-    align-items: center; /* Alinea el ícono y el texto verticalmente */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
 }
 
 .contact-item img {
     margin-right: 10px; /* Espacio entre el ícono y el texto */
-   
+    width: 30px; /* Asegúrate de que todos los íconos tengan el mismo tamaño */
 }
 
 .contact-item p {
@@ -70,13 +72,17 @@ body {
     cursor: pointer; /* Hace que el cursor se vea como un botón */
     transition: color 0.3s ease, font-size 0.3s ease; /* Transición suave para color y tamaño */
     font-size: 16px; /* Tamaño de texto inicial */
-    color: white;
+    color: white; /* Color inicial del texto */
+    
 }
 
+/* Efectos al pasar el mouse */
 .contact-item p:hover {
     color: green; /* Cambia el color del texto a verde al pasar el mouse */
     font-size: 18px; /* Aumenta el tamaño del texto al pasar el mouse */
+    
 }
+
 
 
 
@@ -121,8 +127,10 @@ body {
 
 .web-site a {
     color: white; /* Texto blanco */
+    font-weight: bold;
     text-decoration: none; /* Elimina el subrayado */
     transition: color 0.3s ease; /* Transición suave de color */
+    font-size: 1.25rem;
 }
 
 .web-site a:hover {
