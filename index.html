@@ -2,129 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Tarjeta de Visita</title>
-    <style>
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 400px;
-            width: 90%;
-            height: 90%;
-            text-align: center;
-            margin: 0;
-            align-content: center;
-        }
-
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        .company-name {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .tab {
-            margin: 20px 0;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .tab a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-            padding: 10px 15px;
-            border: 1px solid #007bff;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .tab a:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            text-decoration: none;
-            color: #555;
-            font-size: 24px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #007bff;
-        }
-
-        .add-contact-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #0071BC;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: background-color 0.3s ease;
-        }
-
-        .add-contact-btn:hover {
-            background-color: #29ABE2;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="card">
         <img src="image/perfil.jpg" alt="Foto de perfil" class="profile-img">
-        <div class="company-name">Nombre de la Empresa</div>
+        <div class="company-name">Fuentes Electric LLC</div>
+        <div class="electrical-contractor">Electrical Contractor Licensed</div>
         
         <!-- Botón para descargar la tarjeta de contacto -->
         <a href="https://vcard.link/card/D4bT.vcf" download class="add-contact-btn">+ Add to Contacts</a>
         
         <!-- Pestañas de contacto e información de la empresa -->
-        <div class="tab">
-            <a href="tel:+1234567890">Contact</a>
-            <a href="#">Company</a>
+        <div class="contacts">
+            <div class="contact-item">
+                <a href="tel:+1234567890" target="_blank" title="Phone"></a>
+                    <img src="image/phone.svg" alt="phone" style="width: 30px;">
+                </a>
+                <p>(656) 238-7497</p>
+            </div>
+        
+            <div class="contact-item">
+                <a href="tel:+1234567890" target="_blank" title="Phone"></a>
+                    <img src="image/phone.svg" alt="phone" style="width: 30px;">
+                </a>
+                <p>(787) 602-5530</p>
+            </div>
+        
+            <div class="contact-item">
+                <a href="mailto:fuenteselectric.florida@gmail.com" target="_blank" title="Enviar correo"></a>
+                    <img src="image/email.svg" alt="phone" style="width: 30px;">
+                </a>
+                <p>fuenteselectric.florida@gmail.com</p>
+            </div>
         </div>
+        
+        
+        
         
         <!-- Iconos de redes sociales -->
         <div class="social-icons">
             <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
-                <img src="image/linkedin.png" alt="LinkedIn" style="width: 40px;">
+                <img src="image/linkedin.png" alt="LinkedIn" >
             </a>
             <a href="https://www.twitter.com" target="_blank" title="Twitter">
-                <img src="image/twitter.png" alt="Twitter" style="width: 40px;">
+                <img src="image/twitter.png" alt="Twitter" >
             </a>
             <a href="https://www.instagram.com" target="_blank" title="Instagram">
-                <img src="image/instagram.png" alt="Instagram" style="width: 40px;">
+                <img src="image/instagram.png" alt="Instagram" >
             </a>
         </div>
+
+        <!-- Web site -->
+        <div class="web-site">
+            <a href="https://www.fuentes-electric.com" target="_blank" title="Visitar sitio web">www.fuentes-electric.com</a>
+        </div>
+        
     </div>
 </body>
 </html>
