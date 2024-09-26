@@ -19,11 +19,11 @@ body {
 .card {
     background-color: #000000;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(255, 0, 0);
     padding: 20px;
     max-width: 400px;
     width: 90%;
-    height: 90%;
+    height: 100%;
     text-align: center;
     margin: 0;
     align-content: center;
@@ -44,14 +44,40 @@ body {
 }
 
 .electrical-contractor {
-    font-family: 'A.Casual.Handwritten.Pen', sans-serif; /* Aplica la fuente personalizada */
-    font-size: 1.7rem; /* Ajusta el tamaño de la fuente según sea necesario */
-    color: #ff0000; /* Cambia el color según tus preferencias */
+    font-family: 'A.Casual.Handwritten.Pen', sans-serif; 
+    font-size: 1.7rem; 
+    color: #ff0000; 
 }
+
+/* Boton add to contacts */
+
+.add-contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #db141b; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.add-contact-btn:hover {
+    background-color: orange;
+    color: #000000;
+    transform: scale(1.05); 
+}
+
+.add-contact-btn:active {
+    background-color: gray;
+}
+
+
 
 .contacts {
     display: flex;
     flex-direction: column;
+    margin: 15px;
 }
 
 .contact-item {
@@ -63,28 +89,23 @@ body {
 }
 
 .contact-item img {
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
-    width: 30px; /* Asegúrate de que todos los íconos tengan el mismo tamaño */
+    margin-right: 10px; 
+    width: 30px;
 }
 
 .contact-item p {
-    margin: 0; /* Elimina el margen por defecto del párrafo */
-    cursor: pointer; /* Hace que el cursor se vea como un botón */
-    transition: color 0.3s ease, font-size 0.3s ease; /* Transición suave para color y tamaño */
-    font-size: 16px; /* Tamaño de texto inicial */
-    color: white; /* Color inicial del texto */
-    
+    margin: 0; 
+    cursor: pointer; 
+    transition: color 0.3s ease, font-size 0.3s ease; 
+    font-size: 16px; 
+    color: white; 
 }
 
-/* Efectos al pasar el mouse */
+
 .contact-item p:hover {
-    color: green; /* Cambia el color del texto a verde al pasar el mouse */
-    font-size: 18px; /* Aumenta el tamaño del texto al pasar el mouse */
-    
+    color: green; 
+    font-size: 18px; 
 }
-
-
-
 
 
 
@@ -96,34 +117,16 @@ body {
 }
 
 .social-icons img {
-    width: 40px; /* Tamaño inicial de las imágenes */
-    margin: 0; /* Elimina el margen por defecto */
-    cursor: pointer; /* Hace que el cursor se vea como un botón */
-    transition: width 0.3s ease; /* Suaviza la transición del tamaño */
+    width: 40px; 
+    margin: 0; 
+    cursor: pointer; 
+    transition: width 0.3s ease;
 }
 
 .social-icons img:hover {
-    width: 50px; /* Aumenta el tamaño de las imágenes al pasar el mouse */
+    width: 50px; 
 }
 
-
-
-.add-contact-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    /* background: rgb(247,147,30);background: linear-gradient(90deg, rgba(247,147,30,1) 0%, rgba(193,39,45,1) 36%, rgba(0,0,0,1) 98%); */
-    background-color: #db141b;
-    color: #fff;
-    text-decoration: none;
-    /*border: 2px solid black;  Añade el borde negro */
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
-}
-
-.add-contact-btn:hover {
-    background-color: #000000;
-}
 
 .web-site a {
     color: white; /* Texto blanco */
