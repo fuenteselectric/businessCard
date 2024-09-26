@@ -33,7 +33,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin: 20px;
 }
 
 .company-name {
@@ -70,8 +70,13 @@ body {
 
 .add-contact-btn:active {
     background-color: gray;
+    transform: scale(1);
 }
 
+.add-contact-btn:focus {
+    background-color: #db141b; 
+    outline: none; /* Elimina cualquier borde que podría aparecer al hacer clic */
+}
 
 
 .contacts {
@@ -107,7 +112,9 @@ body {
     font-size: 18px; 
 }
 
-
+.contact-item p:focus {
+    background-color: #ffffff; 
+}
 
 .social-icons {
     display: flex;
