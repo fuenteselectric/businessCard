@@ -99,12 +99,15 @@ body {
 }
 
 .tabcontent {
-    display: flex;
+    display: none;
     align-content: center;
     background-color: #373737;
     padding: 10px;
     min-height: 40vh;
     max-height: auto;
+}
+#contacts {
+    display: block; /* La pestaña de Contacts estará visible inicialmente */
 }
 
 .sumary {
