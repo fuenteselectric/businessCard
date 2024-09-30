@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #808080;
+    background-color: #0071BC;
     color: white;
     margin: 0;
     padding: 0;
@@ -18,18 +18,15 @@ body {
 }
 
 .card {
-    background-color: #000000;
+    background-color: #0071BC;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(255, 0, 0);
     padding: 20px;
     max-width: 400px;
     width: 100%;
     text-align: center;
     margin: 0 10px;
-
     min-height: 100vh;
     max-height: auto;
-    
 }
 
 .header {
@@ -38,6 +35,38 @@ body {
     align-items: center;
     margin-bottom: 15px;
 }
+
+.whatsapp-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.whatsapp-item img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.whatsapp-item p {
+    margin: 0; 
+    cursor: pointer; 
+    transition: color 0.3s ease, font-size 0.3s ease; 
+    font-size: 1rem; 
+    letter-spacing: 1px;
+    color: #ffffff; 
+}
+
+.whatsapp-item p:hover {
+    color: #000000; 
+    font-size: 18px; 
+}
+
+.whatsapp-item p:focus {
+    background-color: #ffffff; 
+}
+
 
 .profile-img {
     width: 100px;
@@ -56,16 +85,17 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #db141b;
+    background-color: #0071BC;
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
+    border: 1px solid #ffffff;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .add-contact-btn:hover {
-    background-color: orange;
-    color: #000000;
+    background-color: rgb(255, 255, 255);
+    color: #0071BC;
     transform: scale(1.05);
 }
 
@@ -79,7 +109,7 @@ body {
 .tablinks {
     background-color: transparent;
     transition: background-color 0.3s ease;
-    color: rgb(231, 27, 27);
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     letter-spacing: 1px;
     text-align: center;
@@ -94,14 +124,15 @@ body {
 }
 
 .tablinks.active {
-    background-color: #373737;
-    color: white;
+    background-color: #ffffff;
+    color: #1B1464;
 }
 
 .tabcontent {
     display: none;
     align-content: center;
-    background-color: #373737;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
     min-height: 40vh;
     max-height: auto;
@@ -112,6 +143,23 @@ body {
 
 .sumary {
     text-align: justify;
+    max-height: 150px; /* Define una altura máxima */
+    overflow-y: auto;  /* Permite el desplazamiento vertical si el contenido excede la altura */
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.sumary::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sumary::-webkit-scrollbar-thumb {
+    background-color: #0071BC;
+    border-radius: 10px;
+}
+
+.sumary::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }
 
 .contacts, .social-icons, .footer, .web-site {
@@ -134,29 +182,36 @@ body {
 .contact-item p {
     margin: 0; 
     cursor: pointer; 
-    transition: color 0.3s ease, font-size 0.3s ease; 
+    transition: color 0.3s ease, transform 0.3s ease; 
     font-size: 1rem; 
     letter-spacing: 1px;
-    color: white; 
+    color: #000000; 
 }
 
 .contact-item p:hover {
-    color: green; 
-    font-size: 18px; 
+    color: #0071BC; 
+    transform: scale(1.05); 
 }
 
 .contact-item p:focus {
     background-color: #ffffff; 
 }
 
+.social-icons {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
 .social-icons img {
-    width: 50px;
-    margin: 0 10px;
-    transition: width 0.3s ease;
+    display: block;
+    width: 80px;
+    margin: 0;
+    transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    width: 40px;
+    transform: scale(1.1);
 }
 
 .footer {
@@ -193,6 +248,6 @@ body {
     }
 
     .social-icons img {
-        width: 30px;
+        width: 50px;
     }
 }
