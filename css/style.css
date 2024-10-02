@@ -130,7 +130,7 @@ body {
 
 .tabcontent {
     display: none;
-    align-content: center;
+    /* align-content: center; */
     background-color: #ffffff;
     color: #000000;
     padding: 10px;
@@ -141,9 +141,13 @@ body {
     margin: 0 auto;            
     box-sizing: border-box; 
 }
-
-#contacts {
+#contacts{
     display: block; /* La pestaña de Contacts estará visible inicialmente */
+}
+#contacts #company, #socials{
+    width: 100%;               
+    max-width: 400px;           
+    margin: 0 auto; 
 }
 
 .sumary {
@@ -190,6 +194,12 @@ body {
     display: flex; 
     justify-content: center; 
     gap: 20px; 
+}
+
+/* Evitar que las imágenes dentro de los tabs alteren el ancho */
+.social-icons img, .contact-item img {
+    max-width: 100%;   /* Aseguramos que las imágenes no excedan el contenedor */
+    height: auto;
 }
 
 .social-icons img {
