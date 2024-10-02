@@ -20,11 +20,11 @@ body {
 .card {
     background-color: #537AC9;
     border-radius: 10px;
-    padding: 20px;
+    
     max-width: 400px;
     width: 100%;
     text-align: center;
-    margin: 0 10px;
+    margin: 0;
     min-height: 100vh;
     max-height: auto;
 }
@@ -129,13 +129,17 @@ body {
 }
 
 .tabcontent {
-    display: none;
-    /* align-content: center; */
+    /* display: none; */
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+height: 80vw;
     background-color: #ffffff;
     color: #000000;
     padding: 10px;
-    min-height: 40vh;
-    max-height: auto;
+    /* min-height: 50vh;
+    max-height: auto; */
     width: 100%;              
     max-width: 400px;          
     margin: 0 auto;            
@@ -144,15 +148,11 @@ body {
 #contacts{
     display: block; /* La pestaña de Contacts estará visible inicialmente */
 }
-#contacts #company, #socials{
-    width: 100%;               
-    max-width: 400px;           
-    margin: 0 auto; 
-}
 
 .sumary {
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 5px;
+    padding: 0 10px;
 }
 
 .contacts, .social-icons, .footer, .web-site {
@@ -161,7 +161,6 @@ body {
 
 .contact-item {
     display: flex;
-    align-items: center;
     text-align: left;
     text-decoration: none;
     margin: 10px;
@@ -193,12 +192,14 @@ body {
 .social-icons {
     display: flex; 
     justify-content: center; 
+    align-items: center;
+    height: 100%; 
     gap: 20px; 
 }
 
 /* Evitar que las imágenes dentro de los tabs alteren el ancho */
 .social-icons img, .contact-item img {
-    max-width: 100%;   /* Aseguramos que las imágenes no excedan el contenedor */
+    max-width: 100%;   
     height: auto;
 }
 
